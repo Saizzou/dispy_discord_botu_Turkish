@@ -4,6 +4,10 @@ Gereken Kütüphaneler:
 random
 discord.py
 
+discord.py için CMD komutu:
+pip install -U discord.py
+# -U: Upgrade demektir. Yani en son sürümleri eklemek için.
+
 Discordunuza ait Developer bölümüne girip Token oluşturmanız gerekiyor. Bunun için:
 http://discordapp.com/developers/applications
 sayfasına gitmeniz gerekecektir.

@@ -21,5 +21,7 @@ Botu Discorda eklemek için OAuth2 kısmına gelin ve alt kısımda bulunan Bot 
 Üstteki Url'yi kopyalayıp Web Tarayıcınızın Adress Bölümüne yapıştırıp enter'e basın.
 Hangi Server'e ekleme yapmak istediğinizi soracaktır. (Botu birden fazla Server'de çalıştırabilirsiniz.)
 
-Eklemeler yapılacaktır!
-(Ban, Link Paylaşımı, Sesli Cevap, Otomatik Grup Ataması gibi özellikler gelecek.)
+# client.py ile client uygulaması yaptık
+# dispy.py ile bot uygulaması yaptık
+
+Client ile bot arasındaki fark bot Client'in subclassı olduğu için client'a göre daha geniş bir yelpazeye sahiptir.

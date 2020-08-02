@@ -55,14 +55,17 @@ async def zar(ctx):
     await ctx.send(','.join(zarlar))
     şeklinde yapılabilirdi.'''
 
-@bot.command(name='kanal_olustur')
+@bot.command(name='kanal_olustur',help='Kanal olusturur.')
 @commands.has_role('Administrator')#Kanal oluşturma komutunu Administrator Grubuna verir.
 @commands.has_role('Editör') #Kanal oluşturma komutunu Editör Grubuna verir.
 async def kanal_olustur(ctx, yeni_kanal):
     guild = ctx.guild
     await guild.create_text_channel(yeni_kanal)
 
-
+@bot.command(name='kick', help='Birilerini atmak icin kullanilir')
+@commands.has_role('Administrator')
+async def kick(ctx, userName: discord.User):
+    await bot.kick(userName)
 
 @bot.event
 async def on_message(message):
